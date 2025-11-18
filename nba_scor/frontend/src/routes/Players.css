@@ -1,0 +1,65 @@
+.players-container {
+  border: 1px, solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  height: calc(100vh - 60px); /* Subtract navbar height */
+  overflow: hidden;
+  width: 40rem;
+}
+
+.players-header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.75rem 0;
+  z-index: 1;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.search-bar input {
+  color: black;
+  width: 90%;
+  padding: 0.75rem 1rem;
+  margin-top: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.2);
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.players-data {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+
+.players-data::-webkit-scrollbar {
+  width: 8px;
+}
+
+.players-data::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.players-data::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.players-data::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

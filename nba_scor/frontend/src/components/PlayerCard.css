@@ -1,0 +1,42 @@
+.player-card{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1rem;
+    margin: 0.25rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: box-shadow 0.3s ease;
+    border-radius: 16px;
+    font-size: 1.5em;
+}
+
+.player-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.player-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(to left, rgba(169, 169, 169, 0.4) 0%, transparent 100%);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.player-card:hover::before {
+    width: 100%;
+}
+
+.player-last-name{
+    font-weight: 500;
+}
+
+.player-first-name{
+    font-style: italic;
+}

@@ -1,0 +1,9 @@
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px, solid rgba(0, 0, 0, 0.1);
+}

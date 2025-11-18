@@ -1,0 +1,142 @@
+.games-page {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.games-page h1 {
+  margin: 0 0 2rem 0;
+  color: #333;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.date-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 1.2rem;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+}
+
+.nav-btn:hover {
+  background: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(25, 118, 210, 0.3);
+}
+
+.nav-btn:active {
+  transform: translateY(0);
+}
+
+.date-selector label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.date-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.date-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.calendar-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 1.5rem;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+}
+
+.calendar-btn:hover {
+  background: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(25, 118, 210, 0.3);
+}
+
+.calendar-btn:active {
+  transform: translateY(0);
+  transform: scale(0.95);
+}
+
+.date-display {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.date-display h2 {
+  color: #1976d2;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.games-loading,
+.games-error,
+.no-games {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.games-loading {
+  color: #666;
+}
+
+.games-error {
+  color: #d32f2f;
+}
+
+.no-games {
+  color: #666;
+}
+
+.date-api-format {
+  color: #666;
+  font-size: 1rem;
+  font-family: monospace;
+  margin: 0;
+}

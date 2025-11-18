@@ -1,0 +1,59 @@
+.teams-team-card {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 1.25rem;
+    margin: 0.5rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: box-shadow 0.3s ease;
+    font-size: larger;  
+    font-style: italic;
+    height: 5rem;
+    color: #000;
+}
+
+.teams-team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(to left, rgba(169, 169, 169, 0.4) 0%, transparent 100%);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.teams-team-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.teams-team-card:hover::before {
+    width: 100%;
+}
+
+.team-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.teams-team-card .team-name {
+    color: black;
+    font-weight: 500;
+}
+
+.team-abbreviation {
+    color: #666;
+}
+

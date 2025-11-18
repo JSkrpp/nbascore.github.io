@@ -1,0 +1,148 @@
+.game-by-game {
+  border: 2px solid #e0e0e0;  
+  background: white;
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.game-by-game h3 {
+  margin: 0 0 1.5rem 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.gamelog-table-container {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: calc(8 * 3.5rem + 3rem);
+  position: relative;
+}
+
+.gamelog-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.gamelog-table th {
+  background: #1976d2;
+  color: white;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.gamelog-table td {
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.gamelog-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.gamelog-table tbody tr.clickable {
+  cursor: pointer;
+}
+
+.gamelog-table tbody tr.clickable:hover {
+  background-color: #e3f2fd !important;
+}
+
+.gamelog-table tbody tr.win {
+  background-color: rgba(76, 175, 80, 0.05);
+}
+
+.gamelog-table tbody tr.loss {
+  background-color: rgba(244, 67, 54, 0.05);
+}
+
+.matchup {
+  text-align: left !important;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.wl {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.win-text {
+  color: #4caf50;
+}
+
+.loss-text {
+  color: #f44336;
+}
+
+.pts {
+  font-weight: 700;
+  color: #1976d2;
+}
+
+.plus {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.minus {
+  color: #f44336;
+  font-weight: 600;
+}
+
+.gamelog-loading,
+.gamelog-error,
+.gamelog-empty {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.gamelog-loading {
+  color: #666;
+}
+
+.gamelog-error {
+  color: #f44336;
+}
+
+.gamelog-empty {
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .gamelog-table {
+    font-size: 0.8rem;
+  }
+
+  .gamelog-table th,
+  .gamelog-table td {
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+.gamelog-table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.gamelog-table-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gamelog-table-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.gamelog-table-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

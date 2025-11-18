@@ -1,0 +1,12 @@
+.game-page {
+  padding: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .game-page {
+    padding: 1rem;
+  }
+}

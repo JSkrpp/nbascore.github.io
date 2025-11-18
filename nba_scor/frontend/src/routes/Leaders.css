@@ -1,0 +1,46 @@
+.leaders-page {
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.leaders-page h1 {
+  margin: 0 0 2rem 0;
+  color: #333;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.leaders-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /* Align by content; equal heights will be maintained via single-line rows */
+  align-items: start;
+}
+
+.leaders-loading,
+.leaders-error {
+  padding: 3rem;
+  text-align: center;
+  color: #666;
+  font-size: 1.125rem;
+}
+
+.leaders-error {
+  color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .leaders-page {
+    padding: 1rem;
+  }
+
+  .leaders-page h1 {
+    font-size: 1.75rem;
+  }
+
+  .leaders-content {
+    grid-template-columns: 1fr;
+  }
+}

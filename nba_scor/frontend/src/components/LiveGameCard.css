@@ -1,0 +1,174 @@
+.game-card-link {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.live-game-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.live-game-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.live-game-card.live {
+  border-color: #4caf50;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+}
+
+.live-game-card.finished {
+  opacity: 0.9;
+}
+
+.live-game-card .team-score{
+  color: black;
+}
+
+/* Header */
+.game-status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-time {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #aaa;
+}
+
+.live-indicator {
+  color: #4caf50;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.game-clock {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+}
+
+/* Teams */
+.teams-section {
+  margin-bottom: 1.2rem;
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+
+.team-row:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.team-info-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.team-logo-small {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.team-name-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-city {
+  font-size: 0.85rem;
+  color: #aaa;
+  font-weight: 500;
+}
+
+.team-name-info .team-name {
+  font-size: 1.1rem;
+  color: #000000;
+  font-weight: 700;
+}
+
+.team-score {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  min-width: 60px;
+  text-align: right;
+}
+
+/* Quarters */
+.quarters-section {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.quarters-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.quarters-table th,
+.quarters-table td {
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.quarters-table th {
+  background: rgba(255, 255, 255, 0.05);
+  color: #aaa;
+  font-weight: 600;
+}
+
+.quarters-table td {
+  color: #000000;
+  font-weight: 500;
+}
+
+.team-col,
+.team-abbr {
+  text-align: left !important;
+  font-weight: 700;
+}
+
+.total-col,
+.total-score {
+  background: rgba(29, 66, 138, 0.2);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .live-game-card {
+    padding: 1rem;
+  }
+  .team-logo-small {
+    width: 40px;
+    height: 40px;
+  }
+  .team-score {
+    font-size: 1.6rem;
+  }
+}
+

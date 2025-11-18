@@ -1,0 +1,97 @@
+.player-container {
+  border: 1px, solid rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: calc(100vh - 60px); /* Subtract navbar height */
+  overflow: hidden;
+}
+
+.player-stats-container .player-stats-section{
+  display: flex;
+}
+
+.player-stats-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.player-stats-container .team-name{
+  color: black;
+  font-weight: 600;
+}
+
+.player-name {
+  align-items: center;
+  justify-content: center ;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.player-id {
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.player-team {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.team-logo-small {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.team-label {
+  font-weight: 600;
+  color: #666;
+}
+
+.player-team-name {
+  color: #000000;
+  font-weight: 700;
+}
+
+.player-team-name:hover {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+.player-photo {
+  width: 520px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-photo-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;  
+}
+
+
+.player-note {
+  color: #666;
+}
+
+.player-loading,
+.player-error {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+

@@ -1,0 +1,97 @@
+.team-roster {
+  border: 2px solid #e0e0e0;  
+  background: white;
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.team-roster h3 {
+  margin: 0 0 1.5rem 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.roster-table-container {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: calc(8 * 3.5rem + 3rem);
+  position: relative;
+}
+
+.roster-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.roster-table th {
+  background: #1976d2;
+  color: white;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.roster-table td {
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.roster-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.roster-table tbody tr.clickable {
+  cursor: pointer;
+}
+
+.roster-table tbody tr.clickable:hover {
+  background-color: #e3f2fd;
+}
+
+.player-name {
+  text-align: left !important;
+  font-weight: 500;
+}
+
+.roster-empty {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .roster-table {
+    font-size: 0.8rem;
+  }
+
+  .roster-table th,
+  .roster-table td {
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+.roster-table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.roster-table-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.roster-table-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.roster-table-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

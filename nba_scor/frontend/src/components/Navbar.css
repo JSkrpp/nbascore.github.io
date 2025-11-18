@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #1d428a;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.navbar-brand {
+  justify-self: start;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  justify-self: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: white;
+  opacity: 0.8;
+}
+
+.navbar-spacer {
+  visibility: hidden;
+  width: 1px;
+  /* Empty div to maintain grid layout */
+}
